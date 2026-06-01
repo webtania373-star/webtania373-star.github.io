@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #08090c; /* Fondo negro-azul muy profundo y misterioso */
+    background-image: url(fonde.jpg); /* Aquí carga tu fondo general */
+    background-size: cover;
+    background-attachment: fixed; /* Hace que el fondo se quede quieto al bajar */
+    line-height: 1.8;
+}
+
+/* Efecto hover Pro y misterioso para el título principal */
+.ew:hover {
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    font-size: 65px;
+    transition: 1s;
+    color: #e61919; /* Rojo carmín intenso */
+    text-shadow: 0px 0px 20px #e61919, 0px 0px 40px #000;
+}
+
+/* Efecto hover para el subtítulo */
+.rr:hover {
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1s;
+    font-size: 26px;
+    cursor: pointer;
+    color: #a3a3a3; /* Gris ceniza elegante */
+    text-shadow: 0px 0px 10px #000;
+}
+
+header {
+    background-image: url(head.jpg); /* Imagen de fondo para el Header */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; 
+    padding: 130px 20px; 
+    text-align: center;
+    border-bottom: 6px solid #e61919; /* Borde rojo misterioso */
+    background-color: #12151c; 
+}
+
+nav {
+    background-image: url(nav.jpg); /* Imagen de fondo para el Menú */
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0b0d13;
+    border-bottom: 2px solid #222;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8); 
+}
+
+section {
+    background-image: url(seccc.png); /* Imagen de fondo para las Secciones */
+    flex: 2;
+    background-position: center;
+    background-size: cover;
+    color: #d1d5db; 
+    padding: 60px;
+    border-radius: 15px;
+    background-color: rgba(18, 20, 26, 0.93); /* Caja semi-oscura pro */
+    border: 1px solid #1f232e;
+}
+
+/* Espacio interno para separar los bloques dentro de la sección */
+section article {
+    margin-bottom: 50px;
+}
+
+aside {
+    flex: 1;
+    background-image: url(side.jpg); /* Imagen de fondo para la barra lateral */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+    border: 1px solid #e61919; 
+    height: fit-content;
+    background-color: rgba(13, 15, 20, 0.95);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-image: linear-gradient(rgba(8, 9, 12, 0.92), rgba(8, 9, 12, 0.98)), 
+                      url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1000');
+    background-size: cover;
+    color: #626875;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 60px;
+    border-top: 4px solid #e61919;
+}
+
+.mer {
+    display: flex; 
+    max-width: 1300px;
+    margin: 50px auto;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+h1 { 
+    font-size: 3.5rem; 
+    letter-spacing: 4px; 
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.9);
+}
+
+h2 { 
+    color: #ffffff; 
+    margin-bottom: 25px; 
+    border-left: 6px solid #e61919; 
+    padding-left: 15px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #e61919; 
+    text-shadow: 0px 0px 8px #e61919;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin: 40px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+table th, table td {
+    border: 1px solid #2a2f3d;
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #e61919; 
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+table td {
+    color: #e5e7eb;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02); 
+}
+
+.fras {
+    margin-top: 40px;
+    border-top: 1px solid #e61919;
+    padding-top: 20px;
+    font-style: italic;
+    color: #e61919; 
+    font-size: 1.05rem;
+}
+
+/* ESTILO PRO PARA EL BOTÓN DE ENTRADAS */
+.boton-boletos {
+    display: inline-block;
+    background-color: #e61919;
+    color: #fff !important;
+    padding: 15px 35px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    transition: 0.4s;
+    box-shadow: 0px 0px 15px rgba(230, 25, 25, 0.4);
+}
+
+.boton-boletos:hover {
+    background-color: #ffffff;
+    color: #000000 !important;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05); 
+}
